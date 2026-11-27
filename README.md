@@ -52,30 +52,6 @@ La base de datos tiene **15 tablas** en el esquema `public`.
 
 ![Diagrama ER](esquema_bbdd.png)
 
-```mermaid
-erDiagram
-    LANGUAGE ||--o{ FILM : "language_id"
-    LANGUAGE ||--o{ FILM : "original_language_id"
-    FILM ||--o{ FILM_ACTOR : ""
-    ACTOR ||--o{ FILM_ACTOR : ""
-    FILM ||--o{ FILM_CATEGORY : ""
-    CATEGORY ||--o{ FILM_CATEGORY : ""
-    FILM ||--o{ INVENTORY : ""
-    STORE ||--o{ INVENTORY : ""
-    INVENTORY ||--o{ RENTAL : ""
-    CUSTOMER ||--o{ RENTAL : ""
-    STAFF ||--o{ RENTAL : ""
-    RENTAL ||--o{ PAYMENT : ""
-    CUSTOMER ||--o{ PAYMENT : ""
-    STAFF ||--o{ PAYMENT : ""
-    STORE ||--o{ CUSTOMER : ""
-    STORE ||--o{ STAFF : ""
-    ADDRESS ||--o{ CUSTOMER : ""
-    ADDRESS ||--o{ STAFF : ""
-    ADDRESS ||--o{ STORE : ""
-    CITY ||--o{ ADDRESS : ""
-    COUNTRY ||--o{ CITY : ""
-```
 
 ## Informe de análisis
 
