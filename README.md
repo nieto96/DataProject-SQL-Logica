@@ -48,11 +48,7 @@ La base de datos tiene **15 tablas** en el esquema `public`.
 | `rental` | 16044 | Alquileres |
 | `payment` | 16049 | Pagos |
 
-### Diagrama de relaciones
 
-![Diagrama ER](esquema_bbdd.png)
-
-```mermaid
 erDiagram
     LANGUAGE ||--o{ FILM : "language_id"
     LANGUAGE ||--o{ FILM : "original_language_id"
